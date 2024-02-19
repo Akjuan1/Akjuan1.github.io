@@ -23,6 +23,24 @@ h1{
   font-family: "Dancing Script", cursive;
 }
 
+.seccion-oscura{
+    background-color: #557550;
+    color: white;
+}
+
+.seccion-clara{
+    background-color: #ffffff;
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: "Dancing Script", cursive;
+}
+.seccion-texto{
+    font-size: 1.2rem;
+}
+
 /* Seccion Hero*/
 .hero{
     background-color: white;
@@ -45,6 +63,63 @@ h1{
     height: 200px;
     border-radius: 50%;
     margin: 20px;
+}
+
+/*Sobre mi*/
+.sobre-mi{
+    height: 500px;
+    padding: 10px;
+
+}
+
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+
+}
+
+/*Experiencia*/
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover{
+    color: white;
+    background-color: #557550;
+}
+
+.experiencia i{
+    font-size: 2.5rem;
+    color: #22ff00;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.experiencia-titulo{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges-contenedor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge{
+    margin: 5px;
 }
 
 /*Adaptable (Responsivo)*/
