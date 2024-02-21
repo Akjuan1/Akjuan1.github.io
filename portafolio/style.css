@@ -120,6 +120,8 @@ h1{
 
 .badge{
     margin: 5px;
+    white-space: normal;
+    text-align: justify;
 }
 
 /*Adaptable (Responsivo)*/
