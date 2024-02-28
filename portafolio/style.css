@@ -261,6 +261,7 @@ h1{
 }
 
 /*Proyectos*/
+
 .proyectos-recientes{
     padding: 60px;
 }
@@ -272,7 +273,52 @@ h1{
     margin: 5px;
     border-radius: 100px;
     box-shadow: 0px 1px 4px 1px white;
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyectos-recientes a h2{
+    font-size: 15px !important; 
+    margin-top: 5px;
+    margin-right: 2.5px;
+    z-index: 2;
+}
+
+.proyectos-recientes a i{
+    z-index: 2;
+}
+
+.btn-mas a::before{
+    content: " ";
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    background-image: conic-gradient( rgb(255, 255, 255) 20deg, transparent 130deg);
+    animation: rotar 2s linear infinite;
+}
+
+.btn-mas a::after{
+    content: "";
+    position: absolute;
+    height: 40px !important;
+    width: 170px !important;
+    background-color:#a9acab;
+    border-top-right-radius: 20px !important; 
+    border-top-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+
+.proyectos-recientes a:hover{
+    background-color: #a9acab;
+}
+
+.proyectos-recientes a:hover h2{
+    color: white;
 }
 
 .proyectos-recientes img{
