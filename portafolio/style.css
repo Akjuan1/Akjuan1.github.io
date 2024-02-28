@@ -1,6 +1,7 @@
 /* Barra de navegacion*/
 
 .navbar{
+    height: 10%;
     background-image: linear-gradient(to left ,#808080,#515151,#000000);
 }
 
@@ -36,13 +37,15 @@ section{
 
 h1{
     font-size: 2.5rem;
-  font-family: "Dancing Script", cursive;
+    font-family: "Dancing Script", cursive;
+    text-shadow: 3px 0px 0px rgb(0, 0, 0) ;
 }
 
 .seccion-titulo{
     font-size: 4rem;
     padding: 15px 0;
     font-family: "Dancing Script", cursive;
+    text-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
 
 .seccion-descripcion{
@@ -52,6 +55,7 @@ h1{
 
 .seccion-texto{
     font-size: 1.2rem;
+    font-family: "Chakra Petch", sans-serif;
 }
 
 .btn-success {
@@ -73,7 +77,7 @@ h1{
 }
 
 .hero-principal{
-    padding-top: 70px;
+    padding-top: 120px;
 }
 
 .hero-principal h1{
@@ -83,14 +87,15 @@ h1{
 .hero-principal h2{
     font-size: 1.5rem;
     color: #ffffff;
+    font-family: "Chakra Petch", sans-serif;
 }
 
 .hero-img-perfil{
     width: 230px;
-    height: 240px;
+    height: 250px;
     border-radius: 50%;
     margin: 20px;
-    box-shadow: 0px 0px 20px 0px white;
+    box-shadow: 0px 0px 15px 0px white;
 }
 
 .contacto-hero a{
@@ -198,8 +203,7 @@ h1{
 
 /*Sobre mi*/
 .sobre-mi{
-    height: 600px;
-    padding: 10px;
+    height: 390px;
 }
 
 .sobre-mi .contenedor{
@@ -263,7 +267,7 @@ h1{
 /*Proyectos*/
 
 .proyectos-recientes{
-    padding: 60px;
+    padding: 70px;
 }
 
 .proyectos-recientes a{
@@ -387,7 +391,7 @@ h1{
 
 /*Habilidades*/
 .habilidades{
-    padding: 60px 40px 90px 40px;
+    padding: 70px 40px 90px 40px;
 }
 
 .habilidades .carousel{
@@ -442,7 +446,7 @@ color: #ffffff;
 /*Contacto*/
 
 .contacto{
-    padding: 20px 20px 90px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .contacto .container{
@@ -511,6 +515,7 @@ color: #ffffff;
 footer{
     min-height: 400px;
 }
+
 .footer-logo{
 height: 80px;
 width: 80px;
@@ -527,21 +532,40 @@ margin: 0px;
 .iconos-redes-sociales a{
     width: 50px;
     height: 50px;
-    display: flex;
     align-items: center;
     justify-content: center;
     padding: 2px;
     margin: 10px;
-    border: none;
-    box-shadow: 0px 1px 4px 1px white;
     border-radius: 50%;
-    transition: all 0.2s ease-in;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    border: none;
+}
+
+.iconos-redes-sociales a::before{
+    content: " ";
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    background-image: conic-gradient( rgb(255, 255, 255) 20deg, transparent 130deg);
+    animation: rotar 2s linear infinite;
+}
+
+.iconos-redes-sociales a::after{
+    content: "";
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    background-color:#a9acab;
+    border-radius: 50%;
 }
 
 .iconos-redes-sociales i{
     color: #ffffff;
     font-size: 1.5rem;
-    transition: all 0.2s ease-in;
+    z-index: 2;
 }
 
 .iconos-redes-sociales a:hover{
