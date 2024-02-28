@@ -1,7 +1,7 @@
 /* Barra de navegacion*/
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to left ,#808080,#515151,#000000);
 }
 
 .nav-link{
@@ -9,7 +9,7 @@
 }
 
 .nav-link:hover{
-    color: rgb(104, 101, 101);
+    color: rgb(0, 0, 0);
 }
 
 .navbar-collapse{
@@ -279,6 +279,7 @@ h1{
     overflow: hidden;
     align-items: center;
     justify-content: center;
+    border: none;
 }
 
 .proyectos-recientes a h2{
