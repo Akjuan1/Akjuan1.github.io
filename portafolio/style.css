@@ -24,6 +24,8 @@ body{
   height: 100vh;
 }
 
+
+
 section{
     display: flex;
     flex-direction: column;
@@ -88,45 +90,110 @@ h1{
     height: 240px;
     border-radius: 50%;
     margin: 20px;
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+.contacto-hero a{
+    height: 45px;
+    width: 100px;
 }
 
 .hero a:hover{
     background-color: #a9acab;
     color: rgb(255, 255, 255);
-    font-size: 1.3rem;
     transition: all 0.2s ease-in-out;
-    border: 1px solid;
-}
-
-.hero a:hover i{
- color: rgb(255, 255, 255);
 }
 
 .hero a{
-    color: rgb(0, 0, 0);
     font-weight: bold;
     background-color:#a9acab;
-    border: 1px solid;
-    padding: 1.25rem 2rem;
-    margin: 5px;
+    margin: 10px;
     border-radius: 100px;
     transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 20px white;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero a h2{
+    z-index: 2;
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0);
+    padding-top: 0.5rem;
 }
 
 .hero a i{
+    background-color:#a9acab;
     color: rgb(0, 0, 0);
     font-size: 1.3rem;
-    transition: all 0.2s ease-in-out;
+    z-index: 2;
 }
 
 .hero .icon-hero i{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .hero .icon-hero a{
     padding: 0.5rem 1rem;
-    margin-left: 0px;
-    margin-right: 9.5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icon-hero a::before{
+    content: " ";
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    background-image: conic-gradient( rgb(255, 255, 255) 20deg, transparent 130deg);
+    animation: rotar 2s linear infinite;
+}
+
+.contacto-hero a{
+    padding: 0.5rem 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contacto-hero a::before{
+    content: " ";
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    background-image: conic-gradient( rgb(255, 255, 255) 20deg, transparent 130deg);
+    animation: rotar 2s linear infinite;
+}
+
+.contacto-hero a::after{
+    content: "";
+    position: absolute;
+    height: 37px !important;
+    width: 93px !important;
+    background-color:#a9acab;
+    border-top-right-radius: 20px !important; 
+    border-top-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+
+.hero .icon-hero a::after{
+    content: "";
+    position: absolute;
+    height: 45px;
+    width: 50px;
+    background-color:#a9acab;
+    border-radius: 50%;
+}
+
+.hero .icon-hero a:hover h2{
+    color: rgb(255, 255, 255);
+}
+
+.hero .icon-hero a:hover i{
+    color: rgb(255, 255, 255);
 }
 
 /*Sobre mi*/
@@ -202,19 +269,10 @@ h1{
     color: rgb(0, 0, 0);
     font-weight: bold;
     background-color:#a9acab;
-    border: 1px solid;
-    padding: 1rem 1rem;
     margin: 5px;
     border-radius: 100px;
-    transition: all 0.2s ease-in-out;
-}
-
-.proyectos-recientes a:hover{
-    background-color: #a9acab;
-    color: rgb(255, 255, 255);
-    font-size: 1.3rem;
-    transition: all 0.2s ease-in-out;
-    border: 1px solid;
+    box-shadow: 0px 1px 4px 1px white;
+    padding: 1rem 1rem;
 }
 
 .proyectos-recientes img{
@@ -223,7 +281,6 @@ h1{
     padding: 10px;
     border-radius: 10px;
     display: block;
-    transition: all 0.2s ease;
 }
 
 .proyectos-contenedor{
@@ -232,7 +289,6 @@ h1{
 }
 
 .overlay{
-    transition: all 0.2s ease;
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -268,7 +324,6 @@ h1{
 }
 
 .overlay a{
-    font-size: 1px;
     padding: 1px 10px 1px 10px;
     border: none;
 }
@@ -277,6 +332,10 @@ h1{
     color: #ffffff;
     font-size: 40px;
     margin: 1px;
+}
+
+.link-github:hover i{
+    color: #000000;
 }
 
 /*Habilidades*/
@@ -334,16 +393,20 @@ color: #ffffff;
 }
 
 /*Contacto*/
+
+.contacto{
+    padding: 20px 20px 90px 20px;
+}
+
 .contacto .container{
     max-width: 1100px;
     min-height: 200px;
-    padding: 20px;
 }
 
 .contacto .rectangulo{
     margin-top: 1rem;
     background-color: rgba(180, 180, 180, 0.51);
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0px 1px 4px 1px white;
 }
 
@@ -383,11 +446,12 @@ color: #ffffff;
     color: white;
     font-weight: bold;
     background-color: transparent;
-    border: 2px solid white;
     padding: 1.25rem 2rem;
     margin: 10px;
+    border: none;
     border-radius: 100px;
     transition: all 0.2s ease-in-out;
+    box-shadow: 0px 1px 4px 1px white;
 }
 
 .contacto button i{
@@ -398,12 +462,12 @@ color: #ffffff;
 
 /*footer*/
 footer{
-    min-height: 500px;
+    min-height: 400px;
 }
 .footer-logo{
 height: 80px;
 width: 80px;
-margin: 10px;
+margin: 0px;
 }
 
 .footer-texto{
@@ -421,7 +485,8 @@ margin: 10px;
     justify-content: center;
     padding: 2px;
     margin: 10px;
-    border: 2px solid white;
+    border: none;
+    box-shadow: 0px 1px 4px 1px white;
     border-radius: 50%;
     transition: all 0.2s ease-in;
 }
@@ -434,7 +499,6 @@ margin: 10px;
 
 .iconos-redes-sociales a:hover{
     background-color: white;
-    border: 2px solid #557550;
 }
 
 .iconos-redes-sociales a:hover i{
@@ -445,7 +509,7 @@ color: black;
 .derecho-de-autor{
     font-size: 15px;
     color: #aeaeae;
-    padding: 20px;
+    padding-top: 40px;
 }
 
 /*Adaptable (Responsivo)*/
@@ -478,5 +542,14 @@ color: black;
 @media screen and (min-width: 700px) {
     .hero-inferior-imagen{
         max-width: 300px;
+    }
+}
+
+@keyframes rotar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
     }
 }
