@@ -631,9 +631,21 @@ transition: all 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 1023px) {
-    .collapse ul{
+    .collapse{
         margin-top: 25px;
     }
+
+    .navbar{
+        width: 260px;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .nav-link{
+        margin-bottom: 15px;
+        margin-left: 60px;
+    }
+
     .navbar-brand{
         display: none;
     }
