@@ -6,7 +6,7 @@
 }
 
 .navbar-nav{
-    margin-left: 970px;
+    margin-left: 950px;
 }
 
 .nav-link{
@@ -642,6 +642,10 @@ transition: all 0.2s ease-in-out;
     }
     .overlay i{
         font-size: 40px;
+    }
+
+    .navbar-nav{
+        margin-left: 0px;
     }
 }
 
