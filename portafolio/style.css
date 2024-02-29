@@ -672,6 +672,9 @@ transition: all 0.2s ease-in-out;
         margin-bottom: 10px;
 
     }
+    .nav-link:hover::before {
+        width: 18%;
+    }
 
     .navbar-brand{
         display: flex;
@@ -681,6 +684,17 @@ transition: all 0.2s ease-in-out;
 
     .navbar-toggler{
         padding: 0px;
+    }
+
+    .nav-link::before{
+        content: " ";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background-image: linear-gradient( white, black);
+        transition: .5s;
     }
 
 }
