@@ -624,7 +624,7 @@ transition: all 0.2s ease-in-out;
 @media screen and (max-width: 767px){
 
     .nav-link{
-        margin-left: 25px !important;
+        margin-left: 20px !important;
     }
 
     .navbar-toggler{
@@ -641,7 +641,7 @@ transition: all 0.2s ease-in-out;
 
 @media screen and (max-width: 1023px) {
     .collapse{
-        margin-top: 0px;
+        margin-top: 5px;
     }
 
     .navbar{
@@ -652,8 +652,8 @@ transition: all 0.2s ease-in-out;
     }
 
     .nav-link{
-        margin-bottom: 15px;
-        margin-left: 60px;
+        margin-bottom: 10px;
+        margin-left: 0px;
     }
 
     .navbar-brand{
