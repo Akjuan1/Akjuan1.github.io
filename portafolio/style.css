@@ -577,6 +577,7 @@ margin: 0px;
     display: inline-flex;
     border: none;
     transition: all 0.2s ease-in-out;
+    background-color: #a9acab;
 }
 
 .iconos-redes-sociales a::before{
