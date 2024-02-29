@@ -673,7 +673,7 @@ transition: all 0.2s ease-in-out;
 
     }
     .nav-link:hover::before {
-        width: 18%;
+        width: 26%;
     }
 
     .navbar-brand{
@@ -690,7 +690,7 @@ transition: all 0.2s ease-in-out;
         content: " ";
         position: absolute;
         top: 100%;
-        left: 0;
+        left: 0%;
         width: 0%;
         height: 3px;
         background-image: linear-gradient( white, black);
