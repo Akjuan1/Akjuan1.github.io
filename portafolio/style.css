@@ -634,6 +634,7 @@ transition: all 0.2s ease-in-out;
 
     .navbar-toggler{
         background-color: #a9acab00;
+        color: transparent;
         border: none;
     }
 
