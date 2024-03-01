@@ -663,7 +663,7 @@ transition: all 0.2s ease-in-out;
     .navbar{
         width: 375px;
         position: fixed;
-        z-index: 1;
+        z-index: 1000;
         background-image: linear-gradient(170deg,#000000,#515151,#6060609b, transparent,  transparent, transparent);
         box-shadow: 0px 1px 4px 1px rgba(255, 255, 255, 0);
     }
