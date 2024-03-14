@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --azul:#3f5efb;
+    --morado-azul:#6959db;
+    --morado:#9e52b3;
+    --morado-rosa:#cd4c8f;
+    --rosa:#fc466b;
+    --white:#fafafb;
+}
+
+body{
+    background: radial-gradient(circle, var(--azul) 0%, var(--morado-azul) 22%, 
+                                        var(--morado) 50%, var(--morado-rosa) 75%, 
+                                        var(--rosa) 100%);
+    height: 100vh;
+    font-family: "Madimi One", sans-serif;
+}
+
+.container{
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.perfil h1{
+    color: var(--white)
+}
+
+.perfil span{
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+.fecha{
+    color: var(--white);
+    padding: 50px 0 10px 0;
+}
+
+.agregar-tarea{
+    background-color: var(--white);
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 70px;
+    margin: 40px 0;
+}
+
+.agregar-tarea input{
+width: 100%;
+height: 100%;
+border-radius: 8px;
+border: none;
+
+background-color: var(--white);
+}
+
+.agregar-tarea i{
+font-size: 50px;
+color: var(--morado);
+}
+
+.agregar-tarea i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.agregar-tarea input::placeholder{
+    font-size: 1.1rem;
+    color: var(--morado);
+}
+
+.seccion-tarea h3{
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.seccion-tarea li{
+    display: flex;
+    background: linear-gradient(to bottom, var(--morado-rosa), var(--rosa));
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    color: var(--white);
+}
+
+.seccion-tarea i{
+    font-size: 25px;
+
+}
+
+.seccion-tarea i:hover{
+    color: var(--morado-azul);
+    cursor: pointer;
+}
+
+.seccion-tarea ul p{
+    font-size: 1.2rem;
+}
+
+.linethrough{
+    text-decoration: line-through;
+    color: var(--morado-azul);
+}
